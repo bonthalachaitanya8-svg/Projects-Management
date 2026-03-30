@@ -1,0 +1,9 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "buildCommand": "cd backend && mvn clean package -DskipTests"
+  },
+  "deploy": {
+    "startCommand": "cd backend && java -jar target/*.jar"
+  }
+}
